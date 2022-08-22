@@ -1,8 +1,7 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/src/index.html"
   status = 200
 
   [build]
-  publish = "/"
   command = "CI=false npm run build"
