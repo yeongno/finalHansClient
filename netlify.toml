@@ -4,4 +4,5 @@
   status = 200
 
   [build]
+  publish = "/"
   command = "CI=false npm run build"
