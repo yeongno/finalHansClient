@@ -4,7 +4,6 @@ import LandingPage from "./views/LandingPage/LandingPage";
 import LoginPage from "./views/LoginPage/LoginPage";
 import RegisterPage from "./views/RegisterPage/RegisterPage";
 import Auth from "../hoc/auth";
-import MoviePage from "./views/MoviePage/MoviePage";
 import PostList from "./views/PostPage/PostList";
 import PostPage from "./views/PostPage/PostPage";
 import DetailPost from "./views/PostPage/DetailPost";
@@ -22,7 +21,6 @@ function App() {
   const LandingPage1 = Auth(LandingPage, null);
   const LoginPage1 = Auth(LoginPage, null);
   const RegisterPage1 = Auth(RegisterPage, null);
-  const MoviePage1 = Auth(MoviePage, true);
   const MyFavoriteList1 = Auth(MyFavoriteList, true);
   const MyProfile1 = Auth(MyProfile, true);
   const ProFileList1 = Auth(ProFileList, true);
@@ -43,7 +41,6 @@ function App() {
           <Route path="/PostPage" element={<PostPage />} />
           <Route path="/myProFile/PostPage" element={<MyPostPage1 />} />
           <Route path="/PostPage/:postId" element={<DetailPost />} />
-          <Route path="/movie" element={<MoviePage1 />} />
           <Route path="/proFileList" element={<ProFileList1 />} />
           <Route path="/:profileId" element={<ProFile1 />} />
           <Route path="/myProFile" element={<MyProfile1 />} />
